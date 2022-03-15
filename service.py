@@ -156,6 +156,7 @@ if __name__ == "__main__":
 
     i = 1
     while True:
-        sender.send_data(str(AI()))
-        print("Sent ", str(AI()))
+        sender.send_data(str(i%10))
+        print("Sent ", str(i%10))
         time.sleep(2)
+        i = i + 1
